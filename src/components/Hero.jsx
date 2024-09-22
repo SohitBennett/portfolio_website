@@ -2,6 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/KevinRushProfile.png";
 import { motion, transform } from "framer-motion";
 import profilePic2 from "../assets/SohitJoshiProfilePic2.png";
+import ProfileAvatar from "./ProfileAvatar";
 
 const container = (delay) => ({
     hidden: {x: -100, opacity: 0},
@@ -46,15 +47,9 @@ const Hero = () => {
                     </motion.p>
                 </div>
             </div>
-            <div className="w-full lg:w-1/2 lg:p-8">
+            <div className="w-full lg:w-1/2 ">
                 <div className="flex justify-center">
-                    <motion.img 
-                        initial={{ x: 100, opacity: 0}}
-                        animate={{ x: 0, opacity: 1}}
-                        transition={{ duration: 1, delay: 1.2}}  
-                        src={profilePic2} 
-                        alt="Kevin Rush" 
-                    />
+                    <ProfileAvatar />
                 </div>
             </div>
         </div>
@@ -63,3 +58,12 @@ const Hero = () => {
 }
 
 export default Hero
+
+
+                    {/* <motion.img 
+                        initial={{ x: 100, opacity: 0}}
+                        animate={{ x: 0, opacity: 1}}
+                        transition={{ duration: 1, delay: 1.2}}  
+                        src={profilePic2} 
+                        alt="Kevin Rush" 
+                    /> */}

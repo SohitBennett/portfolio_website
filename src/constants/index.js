@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+// import project1 from "../assets/projects/project-1.jpg";
+// import project2 from "../assets/projects/project-2.jpg";
+// import project3 from "../assets/projects/project-3.jpg";
+// import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -43,31 +43,35 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "BookShelf",
-    image: project1,
+    // image: project1,
     description:
       "A fully functional book browsing & tracking website with features like ai recommendation, personalised book selection, Pomodoro timer & user authentication.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    folderName: "bookshelf",
   },
   {
     title: "AI powered Gesture based Application Launcher",
-    image: project2,
+    // image: project2,
     description:
       "An ai model based software for launching application on pc using an air canvas to simply just write the name of application to launch it.",
     technologies: ["Python", "MeidaPipe", "OpenCV", "Tenserflow", "Windows API", "OCR model"],
+    folderName: "launcher",
   },
   {
     title: "Portfolio Website",
-    image: project3,
+    // image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["React", "Tailwind", "Framer-motion"],
+    folderName: "portfolio",
   },
   {
     title: "Parakh Practice Exam portal",
-    image: project4,
+    // image: project4,
     description:
       "A platform for adaptive learning for students using AI model to set difficulty of pratice quizes adaptively. ",
     technologies: ["HTML", "CSS", "Python", "django", "mySQL", "Random Forest"],
+    folderName: "parakh",
   },
 ];
 

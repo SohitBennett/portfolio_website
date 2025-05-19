@@ -343,6 +343,10 @@ import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 // import { SiMongodb, SiTailwindcss, SiPostman, SiThreedotjs } from "react-icons/si";
 import { SiMongodb, SiTailwindcss, SiPostman, SiExpress } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
+import { SiPassport, SiNextdotjs } from "react-icons/si";
+import { MdCookie } from "react-icons/md";
+
 
 import { motion } from "framer-motion";
 
@@ -370,91 +374,176 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-32 text-center text-6xl font-semibold tracking-tighter"
       >
         Technologies
       </motion.h2>
 
-      {/* Rotating cube */}
-      <motion.div
-        className="relative w-64 h-64"
-        variants={cubeVariants}
-        animate="animate"
-        style={{
-          transformStyle: "preserve-3d",
-          position: "relative",
-          width: "200px",
-          height: "200px",
-        }}
-      >
-        {/* Cube faces with transparent background */}
+      <div className="flex item-center justify-between gap-36">
+        {/* Rotating cube */}
         <motion.div
-          className="absolute flex items-center justify-center w-full h-full"
-          style={{ 
-            transform: "rotateY(0deg) translateZ(100px)",
-            background: "rgba(26, 26, 26, 0.2)",  
-            border: "1px solid rgba(255, 255, 255, 0.2)"  
+          className="relative w-64 h-64"
+          variants={cubeVariants}
+          animate="animate"
+          style={{
+            transformStyle: "preserve-3d",
+            position: "relative",
+            width: "200px",
+            height: "200px",
           }}
         >
-          <RiReactjsLine className="text-5xl text-cyan-400" />
-        </motion.div>
+          {/* Cube faces with transparent background */}
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateY(0deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)",  
+              border: "1px solid rgba(255, 255, 255, 0.2)"  
+            }}
+          >
+            <RiReactjsLine className="text-5xl text-cyan-400" />
+          </motion.div>
 
-        <motion.div
-          className="absolute flex items-center justify-center w-full h-full"
-          style={{ 
-            transform: "rotateY(90deg) translateZ(100px)",
-            background: "rgba(26, 26, 26, 0.2)", 
-            border: "1px solid rgba(255, 255, 255, 0.2)" 
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateY(90deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <SiTailwindcss className="text-5xl text-blue-400" />
+          </motion.div>
+
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateY(180deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <SiMongodb className="text-5xl text-green-500" />
+          </motion.div>
+
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateY(270deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <SiPostman className="text-5xl text-orange-500" />
+          </motion.div>
+
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateX(90deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <FaNodeJs className="text-5xl text-green-500" />
+          </motion.div>
+
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateX(-90deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <SiExpress className="text-5xl text-gray-300" />
+
+          </motion.div>
+        </motion.div>
+              {/* Rotating cube */}
+              <motion.div
+          className="relative w-64 h-64"
+          variants={cubeVariants}
+          animate="animate"
+          style={{
+            transformStyle: "preserve-3d",
+            position: "relative",
+            width: "200px",
+            height: "200px",
           }}
         >
-          <SiTailwindcss className="text-5xl text-blue-400" />
-        </motion.div>
+          {/* Cube faces with transparent background */}
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateY(0deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)",  
+              border: "1px solid rgba(255, 255, 255, 0.2)"  
+            }}
+          >
+            <FaHtml5 className="text-5xl text-orange-500" />
+          </motion.div>
 
-        <motion.div
-          className="absolute flex items-center justify-center w-full h-full"
-          style={{ 
-            transform: "rotateY(180deg) translateZ(100px)",
-            background: "rgba(26, 26, 26, 0.2)", 
-            border: "1px solid rgba(255, 255, 255, 0.2)" 
-          }}
-        >
-          <SiMongodb className="text-5xl text-green-500" />
-        </motion.div>
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateY(90deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <FaCss3Alt className="text-5xl text-blue-500" />
+          </motion.div>
 
-        <motion.div
-          className="absolute flex items-center justify-center w-full h-full"
-          style={{ 
-            transform: "rotateY(270deg) translateZ(100px)",
-            background: "rgba(26, 26, 26, 0.2)", 
-            border: "1px solid rgba(255, 255, 255, 0.2)" 
-          }}
-        >
-          <SiPostman className="text-5xl text-orange-500" />
-        </motion.div>
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateY(180deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <FaJsSquare className="text-5xl text-yellow-400" />
+          </motion.div>
 
-        <motion.div
-          className="absolute flex items-center justify-center w-full h-full"
-          style={{ 
-            transform: "rotateX(90deg) translateZ(100px)",
-            background: "rgba(26, 26, 26, 0.2)", 
-            border: "1px solid rgba(255, 255, 255, 0.2)" 
-          }}
-        >
-          <FaNodeJs className="text-5xl text-green-500" />
-        </motion.div>
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateY(270deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <SiPassport className="text-5xl text-green-400" />
+          </motion.div>
 
-        <motion.div
-          className="absolute flex items-center justify-center w-full h-full"
-          style={{ 
-            transform: "rotateX(-90deg) translateZ(100px)",
-            background: "rgba(26, 26, 26, 0.2)", 
-            border: "1px solid rgba(255, 255, 255, 0.2)" 
-          }}
-        >
-          <SiExpress className="text-5xl text-gray-300" />
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateX(90deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <MdCookie className="text-5xl text-amber-200" />
+          </motion.div>
 
+          <motion.div
+            className="absolute flex items-center justify-center w-full h-full"
+            style={{ 
+              transform: "rotateX(-90deg) translateZ(100px)",
+              background: "rgba(26, 26, 26, 0.2)", 
+              border: "1px solid rgba(255, 255, 255, 0.2)" 
+            }}
+          >
+            <SiNextdotjs className="text-5xl text-white" />
+
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
+
+
+
     </div>
   );
 };

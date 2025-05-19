@@ -136,7 +136,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-8 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl"
+              className="pb-8 text-4xl font-semibold tracking-tight lg:mt-16 lg:text-6xl"
             >
               Sohit Joshi
             </motion.h1>

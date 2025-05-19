@@ -127,19 +127,25 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 
 const Projects = () => {
+  const basePath = "src/assets/projects/";
     return (
       <div id="projects" className="section border-b border-neutral-900 pb-4">
         <motion.h2
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
-          className="my-20 text-center text-4xl"
+          className="my-20 text-center text-6xl font-semibold tracking-tighter"
         >
           Projects
         </motion.h2>
         <div>
           {PROJECTS.map((project, index) => {
+            // const folderName = project.folderName;
             const folderName = project.folderName;
+            const fullPath = basePath + folderName;
+            console.log('Processing folder:', folderName);
+            console.log('Full path:', fullPath);
+            console.log(folderName);
             return (
               <div key={index} className="mb-8 flex flex-wrap lg:flex-nowrap">
                 
@@ -152,6 +158,7 @@ const Projects = () => {
                     className="w-full"
                   >
                     <ImageSlider folderPath={folderName} />
+                    
                   </motion.div>
                 </div>
   
@@ -163,12 +170,12 @@ const Projects = () => {
                     transition={{ duration: 1 }}
                     className="w-full"
                   >
-                    <h6 className="font-semibold">{project.title}</h6>
+                    <h6 className="my-2 text-2xl font-semibold">{project.title}</h6>
                     <p className="mb-4 text-neutral-400">{project.description}</p>
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
+                        className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-400"
                       >
                         {tech}
                       </span>

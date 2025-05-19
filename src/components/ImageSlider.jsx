@@ -15,6 +15,10 @@ const ImageSlider = ({ folderPath }) => {
         launcher: import.meta.glob('../assets/projects/launcher/*.png'),
         portfolio: import.meta.glob('../assets/projects/portfolio/*.png'),
         parakh: import.meta.glob('../assets/projects/parakh/*.png'),
+        speedmeter: import.meta.glob('../assets/projects/speedmeter/*.png'),
+        ochi: import.meta.glob('../assets/projects/ochi/*.png'),
+        todolist: import.meta.glob('../assets/projects/todolist/*.png'),
+        pin: import.meta.glob('../assets/projects/pin/*.png'),
         about: import.meta.glob('../assets/about/*.{png,jpg}'),
       };
 

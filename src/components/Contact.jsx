@@ -79,13 +79,13 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-10 text-center text-4xl"
+        className="my-10 text-center text-6xl font-semibold tracking-tighter"
       >
         Get in Touch
       </motion.h1>
       <div className="flex flex-wrap lg:flex-nowrap lg:justify-center lg:items-start">
         {/* Contact Details */}
-        <div className="w-full lg:w-1/2 px-4 text-center tracking-tighter mb-8 lg:mb-0">
+        <div className="w-full lg:w-1/2 px-4 text-lg text-center tracking-tighter mb-8 lg:mb-0">
           <motion.p
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
@@ -102,7 +102,7 @@ const Contact = () => {
           >
             {CONTACT.phoneNo}
           </motion.p>
-          <a href={`mailto:${CONTACT.email}`} className="border-b">
+          <a href={`mailto:${CONTACT.email}`} className="border-b ">
             {CONTACT.email}
           </a>
         </div>
@@ -111,7 +111,7 @@ const Contact = () => {
         <div className="w-full lg:w-1/2 px-4 ">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-400">
+              <label htmlFor="name" className="block text-lg font-medium text-gray-50">
                 Name
               </label>
               <input
@@ -120,12 +120,12 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-600 rounded-lg bg-neutral-800 text-gray-300 focus:outline-none focus:ring focus:ring-purple-500"
+                className="w-full px-3 py-2 border border-gray-600 rounded-lg bg-neutral-400 text-gray-300 focus:outline-none focus:ring focus:ring-purple-500"
                 required
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-400">
+              <label htmlFor="email" className="block text-lg font-medium text-gray-50">
                 Email
               </label>
               <input
@@ -134,12 +134,12 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-600 rounded-lg bg-neutral-800 text-gray-300 focus:outline-none focus:ring focus:ring-purple-500"
+                className="w-full px-3 py-2 border border-gray-600 rounded-lg bg-neutral-400 text-gray-300 focus:outline-none focus:ring focus:ring-purple-500"
                 required
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-400">
+              <label htmlFor="message" className="block text-lg font-medium text-gray-50">
                 Message
               </label>
               <textarea
@@ -147,7 +147,7 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-600 rounded-lg bg-neutral-800 text-gray-300 focus:outline-none focus:ring focus:ring-purple-500"
+                className="w-full px-3 py-2 border border-gray-600 rounded-lg bg-neutral-400 text-gray-300 focus:outline-none focus:ring focus:ring-purple-500"
                 rows="4"
                 required
               ></textarea>

@@ -113,8 +113,9 @@ import ProfileAvatar from "./ProfileAvatar";
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import Lottie from 'react-lottie-player';
 import animationData from '../assets/animations/coding-laptop.json'; 
+import Lottie from "lottie-react";
+import mouseDownAnimation from "../assets/mouseDowngif.json";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -156,7 +157,8 @@ const Hero = () => {
               {HERO_CONTENT}
             </motion.p>
             <a
-              href="https://drive.google.com/file/d/1kOtQpRMWD4J5kQBj4zWBJtzrI_5s5yCE/view?usp=drive_link"
+              // href="https://drive.google.com/file/d/1kOtQpRMWD4J5kQBj4zWBJtzrI_5s5yCE/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1kOtQpRMWD4J5kQBj4zWBJtzrI_5s5yCE/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center rounded-full bg-blue-500 px-4 py-2 text-white font-semibold shadow-lg transition-transform duration-200 hover:scale-105"
@@ -178,16 +180,26 @@ const Hero = () => {
         </div>  
       </div>
 
-      <div className="flex justify-center mt-8 mb-15"> 
+      {/* <div className="flex justify-center mt-8 mb-15"> 
         <Link to="skills" smooth={true} duration={1500} className="cursor-pointer">
           <img
-            src="https://bearwise.org/wp-content/uploads/2015/04/scroll.gif"
+            // src="https://bearwise.org/wp-content/uploads/2015/04/scroll.gif"
+            src="src\assets\mouse_down_animation.lottie"
             alt="Scroll Down"
             className="relative w-[45%] md:w-[13%] mx-auto"
           />
         </Link>
+      </div> */}
+      {/* <div className="w-24 h-24">
+        <Lottie animationData={mouseDownAnimation} loop={true} />
+      </div> */}
+      <div className="flex justify-center mt-8 mb-15 cursor-pointer">
+        <Link to="skills" smooth={true} duration={1500}>
+          <div className="w-24 h-24">
+            <Lottie animationData={mouseDownAnimation} loop={true} />
+          </div>
+        </Link>
       </div>
-
     </div>
   );
 };

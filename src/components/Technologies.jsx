@@ -341,7 +341,9 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb, SiTailwindcss, SiPostman, SiThreedotjs } from "react-icons/si";
+// import { SiMongodb, SiTailwindcss, SiPostman, SiThreedotjs } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiPostman, SiExpress } from "react-icons/si";
+
 import { motion } from "framer-motion";
 
 const cubeVariants = {
@@ -405,7 +407,7 @@ const Technologies = () => {
             border: "1px solid rgba(255, 255, 255, 0.2)" 
           }}
         >
-          <SiThreedotjs className="text-5xl text-purple-500" />
+          <SiTailwindcss className="text-5xl text-blue-400" />
         </motion.div>
 
         <motion.div
@@ -427,7 +429,7 @@ const Technologies = () => {
             border: "1px solid rgba(255, 255, 255, 0.2)" 
           }}
         >
-          <DiRedis className="text-5xl text-red-700" />
+          <SiPostman className="text-5xl text-orange-500" />
         </motion.div>
 
         <motion.div
@@ -449,7 +451,8 @@ const Technologies = () => {
             border: "1px solid rgba(255, 255, 255, 0.2)" 
           }}
         >
-          <BiLogoPostgresql className="text-5xl text-sky-700" />
+          <SiExpress className="text-5xl text-gray-300" />
+
         </motion.div>
       </motion.div>
     </div>

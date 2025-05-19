@@ -122,6 +122,7 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import ImageSlider from "./ImageSlider";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 
 
@@ -172,8 +173,35 @@ const Projects = () => {
                         {tech}
                       </span>
                     ))}
+                    <div className="mt-4 flex items-center space-x-4">
+                      {/* GitHub Link */}
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-2xl text-neutral-400 hover:text-white transition"
+                        title="GitHub Repository"
+                      >
+                        <FaGithub />
+                      </a>
+
+                      {/* Live Link (if exists) */}
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-2xl text-neutral-400 hover:text-white transition"
+                          title="Live Demo"
+                        >
+                          <FaExternalLinkAlt />
+                        </a>
+                      )}
+                    </div>
+
                   </motion.div>
                 </div>
+
               </div>
             );
           })}

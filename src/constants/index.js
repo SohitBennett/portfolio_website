@@ -43,15 +43,49 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "BookShelf",
-    // image: project1,
     description:
       "A fully functional book browsing & tracking website with features like ai recommendation, personalised book selection, Pomodoro timer & user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["HTML", "CSS", "React", "Tailwind CSS", "Node.js", "MongoDB", "Express.js", "JWT"],
     folderName: "bookshelf",
+    github: "https://github.com/yourusername/bookshelf",
+    live: "https://book-shelf-lime.vercel.app",
+  },
+  {
+    title: "Internet Speed Meter",
+    description:
+      "Developed a robust chrome extension to monitor internet speed constantly, very necessary as a nerd.",
+    technologies: ["JavaScript", "Chrome Extensions API", "HTML", "CSS", "LocalStorage", "Fetch API"],
+    folderName: "speedmeter",
+    github: "https://github.com/SohitBennett/Internet-Speed-meter-extension",
+  },
+  {
+    title: "Ochi Frontend webstie",
+    description:
+      "Recreated the Awwward-winning Ochi design site using React, Framer Motion, and GSAP to achieve smooth scroll, animated transitions, and a modern, responsive UI. Emphasized pixel-perfect layout and interactive user experience.",
+    technologies: ["React.js", "HTML", "CSS", "JavaScript", "Framer Motion", "GSAP", "Tailwind CSS"],
+    folderName: "ochi",
+    github: "https://github.com/SohitBennett/Ochi",
+    live: "https://ochi-orcin.vercel.app",
+  },
+  {
+    title: "Fullstack Task Notes application",
+    description:
+      "Developed a to-do list application in Nextjs with database intergrated for seamless and reliable updation & deletion of tasks",
+    technologies: ["Next.js", "Node.js", "MongoDB", "Express.js", "Passport.js", "JWT" ],
+    folderName: "todolist",
+    github: "https://github.com/SohitBennett/nextjs-todo-list",
+    live: "https://nextjs-todo-list-vert-ten.vercel.app"
+  },
+  {
+    title: "Pinterest Clone",
+    description:
+      "Create boards, save pins and make collages of all your inspiration in this website, Backend project with minimal frontend using ejs",
+    technologies: ["ejs", "Node.js", "MongoDB", "Express.js", "Passport.js", "Cookies" ],
+    folderName: "pin",
+    github: "https://github.com/SohitBennett/pinterest-clone"
   },
   {
     title: "AI powered Gesture based Application Launcher",
-    // image: project2,
     description:
       "An ai model based software for launching application on pc using an air canvas to simply just write the name of application to launch it.",
     technologies: ["Python", "MeidaPipe", "OpenCV", "Tenserflow", "Windows API", "OCR model"],
@@ -59,19 +93,20 @@ export const PROJECTS = [
   },
   {
     title: "Portfolio Website",
-    // image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["React", "Tailwind", "Framer-motion"],
     folderName: "portfolio",
+    github: "https://github.com/SohitBennett/portfolio_website",
+    live: "https://sohitjoshi.vercel.app/"
   },
   {
     title: "Parakh Practice Exam portal",
-    // image: project4,
     description:
       "A platform for adaptive learning for students using AI model to set difficulty of pratice quizes adaptively. ",
     technologies: ["HTML", "CSS", "Python", "django", "mySQL", "Random Forest"],
     folderName: "parakh",
+    github: ""
   },
 ];
 

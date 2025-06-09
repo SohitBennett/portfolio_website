@@ -47,8 +47,17 @@ export const PROJECTS = [
       "A fully functional book browsing & tracking website with features like ai recommendation, personalised book selection, Pomodoro timer & user authentication.",
     technologies: ["HTML", "CSS", "React", "Tailwind CSS", "Node.js", "MongoDB", "Express.js", "JWT"],
     folderName: "bookshelf",
-    github: "https://github.com/yourusername/bookshelf",
+    github: "https://github.com/SohitBennett/bookshelf",
     live: "https://book-shelf-lime.vercel.app",
+  },
+  {
+    title: "Visitor Management System",
+    description:
+      "A full-stack web application that streamlines visitor check-ins and check-outs for organizations. It features secure visitor registration, host notifications via email, QR code generation for entry passes, and a real-time dashboard for admins to monitor active visitors. The system also includes role-based access control, visit history logs, and a responsive UI for both web and tablet devices.",
+    technologies: ["Next.js", "Tailwind CSS", "Node.js", "MongoDB", "Express.js", "JWT", "Nodemailer"],
+    folderName: "vms",
+    github: "https://github.com/SohitBennett/visitor-management-frontend",
+    live: "https://visitor-management-frontend.vercel.app",
   },
   {
     title: "Internet Speed Meter",

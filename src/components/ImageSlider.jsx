@@ -12,6 +12,7 @@ const ImageSlider = ({ folderPath }) => {
       
       const allImageModules = {
         bookshelf: import.meta.glob('../assets/projects/bookshelf/*.png'),
+        vms: import.meta.glob('../assets/projects/vms/*.png'),
         launcher: import.meta.glob('../assets/projects/launcher/*.png'),
         portfolio: import.meta.glob('../assets/projects/portfolio/*.png'),
         parakh: import.meta.glob('../assets/projects/parakh/*.png'),

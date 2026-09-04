@@ -3,11 +3,13 @@
 // import project3 from "../assets/projects/project-3.jpg";
 // import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with experience in making scalable production level websites. I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js and MongoDB also session management. My goal is to leverage my expertise to create innovative websites and also grow myself while upscaling my skills.`;
+
+export const HERO_CONTENT = `Software Engineer focused on building production-grade web and mobile applications with JavaScript and TypeScript. I work across React, Next.js, React Native, Node.js, and MongoDB, with hands-on experience in real-time systems, caching, cloud deployment, and product analytics. Currently working as an SDE Intern at Inddev Ventures, building and shipping features across web, mobile, backend, and infrastructure.`;
+
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly as well as eye catching web applications, also an AI ML student where I have created a lot of powerfull AI applications. I have worked with a variety of technologies, including MERN stack, Java applications, python games also very proficinet in cpp. My journey in web development began with a deep curiosity for how websites work what cookies are which I used to tap "I accept everytime without knowing what it did.", I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
-export const ABOUT_TEXT2 = 'I am a Fullstack developer currently 3rd year in college persuing B.Tech in CSE, I have worked with a variety of technologies, including MERN stack, Java applications, python games I am also very proficinet in cpp. My journey in web development began with a deep curiosity for how websites work what cookies are which I used to tap "I accept" everytime without knowing what it did.I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies and also exploring the world of AI during my classes where I have made a lot of interesting and powerful AI applications. ';
+export const ABOUT_TEXT2 = 'I am a Software Engineer and Computer Science graduate focused on building production-grade web and mobile applications. I work primarily with JavaScript and TypeScript across React, Next.js, React Native, Node.js, and MongoDB. During my work at a startup, I have built features across frontend, backend, real-time systems, caching, analytics, and cloud deployment. I enjoy solving practical engineering problems, learning how systems work under the hood, and turning ideas into reliable products.';
 
 export const EXPERIENCES = [
   {
@@ -41,6 +43,25 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+
+  {
+    title: "Gatekeeper: Visitor Management System",
+    description:
+      "A full-stack web application that streamlines visitor check-ins and check-outs for organizations. It features secure visitor registration, host notifications via email, QR code generation for entry passes, and a real-time dashboard for admins to monitor active visitors. The system also includes role-based access control, visit history logs, and a responsive UI for both web and tablet devices.",
+    technologies: ["Next.js", "Tailwind CSS", "Node.js", "MongoDB", "Express.js", "JWT", "Nodemailer"],
+    folderName: "vms",
+    github: "https://github.com/SohitBennett/visitor-management-frontend",
+    live: "https://visitor-management-frontend.vercel.app",
+  },
+  {
+    title: "Planify",
+    description:
+      "Full-stack calendar application inspired by Google Calendar, with multiple calendar views, event and task management, recurring events, search, and automated email reminders.",
+    technologies: ["Next.js", "Tailwind CSS", "Node.js", "MongoDB", "Express.js", "JWT", "ShadCN"],
+    folderName: "calendar",
+    github: "https://github.com/SohitBennett/planify",
+    live: "https://planify-sigma-azure.vercel.app/",
+  },
   {
     title: "BookShelf",
     description:
@@ -49,15 +70,6 @@ export const PROJECTS = [
     folderName: "bookshelf",
     github: "https://github.com/SohitBennett/bookshelf",
     live: "https://book-shelf-lime.vercel.app",
-  },
-  {
-    title: "Visitor Management System",
-    description:
-      "A full-stack web application that streamlines visitor check-ins and check-outs for organizations. It features secure visitor registration, host notifications via email, QR code generation for entry passes, and a real-time dashboard for admins to monitor active visitors. The system also includes role-based access control, visit history logs, and a responsive UI for both web and tablet devices.",
-    technologies: ["Next.js", "Tailwind CSS", "Node.js", "MongoDB", "Express.js", "JWT", "Nodemailer"],
-    folderName: "vms",
-    github: "https://github.com/SohitBennett/visitor-management-frontend",
-    live: "https://visitor-management-frontend.vercel.app",
   },
   {
     title: "Internet Speed Meter",
@@ -80,7 +92,7 @@ export const PROJECTS = [
     title: "Fullstack Task Notes application",
     description:
       "Developed a to-do list application in Nextjs with database intergrated for seamless and reliable updation & deletion of tasks",
-    technologies: ["Next.js", "Node.js", "MongoDB", "Express.js", "Passport.js", "JWT" ],
+    technologies: ["Next.js", "Node.js", "MongoDB", "Express.js", "Passport.js", "JWT"],
     folderName: "todolist",
     github: "https://github.com/SohitBennett/nextjs-todo-list",
     live: "https://nextjs-todo-list-vert-ten.vercel.app"
@@ -89,7 +101,7 @@ export const PROJECTS = [
     title: "Pinterest Clone",
     description:
       "Create boards, save pins and make collages of all your inspiration in this website, Backend project with minimal frontend using ejs",
-    technologies: ["ejs", "Node.js", "MongoDB", "Express.js", "Passport.js", "Cookies" ],
+    technologies: ["ejs", "Node.js", "MongoDB", "Express.js", "Passport.js", "Cookies"],
     folderName: "pin",
     github: "https://github.com/SohitBennett/pinterest-clone"
   },

@@ -157,7 +157,7 @@ const Hero = () => {
               {HERO_CONTENT}
             </motion.p>
             <a
-              href="https://drive.google.com/file/d/1UHetS_eAavXGOrs0nodbcTtWWlClyxzA/view?usp=sharing"
+              href="https://drive.google.com/file/d/1pw__5DJis_Qw8q6pMKjZ59tD2bhRd3MQ/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center rounded-full bg-blue-500 px-4 py-2 text-white font-semibold shadow-lg transition-transform duration-200 hover:scale-105"

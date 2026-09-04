@@ -11,6 +11,7 @@ const ImageSlider = ({ folderPath }) => {
     const fetchImages = async () => {
       
       const allImageModules = {
+        calendar: import.meta.glob('../assets/projects/calendar/*.{png,jpg,jpeg,webp}'),
         bookshelf: import.meta.glob('../assets/projects/bookshelf/*.png'),
         vms: import.meta.glob('../assets/projects/vms/*.png'),
         launcher: import.meta.glob('../assets/projects/launcher/*.png'),
